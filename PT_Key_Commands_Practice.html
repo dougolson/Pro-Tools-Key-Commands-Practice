@@ -1,0 +1,195 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//dtD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/dtD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>RT230 Key Commands</title>
+<link rel="stylesheet" href="style2.css" type="text/css" media="all" />
+<script src="shortcut.js" type="text/javascript"></script>
+<script src="jsl.js" type="text/javascript"></script>
+<script src="common.js" type="text/javascript"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+function markCalled(id) {
+	$(id).innerHTML = "Yes!";
+	$(id).className = "message-success";
+}
+function init() {
+	shortcut.add("meta+e", function() {
+		markCalled("separate");
+	});
+	shortcut.add("Alt+r", function() {
+		markCalled("repeat");
+	});
+	shortcut.add("meta+d", function() {
+		markCalled("duplicate");
+	});
+	shortcut.add("F7", function() {
+		markCalled("selector");
+	});
+	shortcut.add("F2", function() {
+		markCalled("slip");
+	});
+	shortcut.add("Ctrl+Shift+1", function() {
+		markCalled("ctrlshift1");
+	});
+	shortcut.add("Shift+Alt+3", function() {
+		markCalled("consol");
+	});
+	shortcut.add("meta+f", function() {
+		markCalled("fade");
+	});
+	shortcut.add("meta+g", function() {
+		markCalled("group");
+	});
+	shortcut.add("meta+z", function() {
+		markCalled("undo");
+	});
+	shortcut.add("alt+meta+tab", function() {
+		markCalled("tabtrans");
+	});
+	shortcut.add("alt+meta+m", function() {
+		markCalled("narrow");
+	});
+	shortcut.add("meta+k", function() {
+		markCalled("preroll");
+	});
+	shortcut.add("meta+shift+l", function() {
+		markCalled("loop");
+	});
+	shortcut.add("alt+meta+g", function() {
+		markCalled("Clipgrp");
+	});
+	shortcut.add("alt+meta+l", function() {
+		markCalled("regloop");
+	});
+	shortcut.add("alt+f", function() {
+		markCalled("fill");
+	});
+	shortcut.add("shift+return", function() {
+		markCalled("cursToStart");
+	});
+	shortcut.add("alt+shift+return", function() {
+		markCalled("cursToEnd");
+	});
+	shortcut.add("meta+shift+u", function() {
+		markCalled("selectun");
+	});
+	shortcut.add("meta+,", function() {
+		markCalled("syncpoint");
+	});
+	shortcut.add("down", function() {
+		markCalled("cursor");
+	});
+	shortcut.add("alt+0", function() {
+		markCalled("quantize");
+	});
+	shortcut.add("meta+i", function() {
+		markCalled("identify");
+	});
+	shortcut.add("meta+shift+b", function() {
+		markCalled("clearun");
+	});
+	shortcut.add("", function() {
+		markCalled("");
+	});
+	
+}
+window.onload=init;
+</script>
+</head>
+<body>
+<div id="header">
+<div id="content">
+
+<h2>Pro Tools Key Commands Practice</h2>
+
+<h3>Press the keys you think will execute the commands listed below</h3>
+
+<h4>All Commands work in Firefox. A few do not work in Safari and Chrome</h4> 
+
+<dl>
+
+<dt>Separate Clip</dt>
+<dd>Correct Keys Pressed : <span id="separate">Not Yet</span></dd>
+
+<dt>Repeat Clip</dt>
+<dd>Correct Keys Pressed : <span id="repeat">Not Yet</span></dd>
+
+<dt>Duplicate</dt>
+<dd>Correct Keys Pressed : <span id="duplicate">Not Yet</span></dd>
+
+<dt>Selector Tool</dt>
+<dd>Correct Keys Pressed : <span id="selector">Not Yet</span></dd>
+
+<dt>Slip Mode</dt>
+<dd>Correct Keys Pressed : <span id="slip">Not Yet</span></dd>
+
+<dt>Create Fade</dt>
+<dd>Correct Keys Pressed : <span id="fade">Not Yet</span></dd>
+
+<dt>Consolidate</dt>
+<dd>Correct Keys Pressed : <span id="consol">Not Yet</span></dd>
+
+<dt>Create Group</dt>
+<dd>Correct Keys Pressed : <span id="group">Not Yet</span></dd>
+
+</dl>
+<dl>
+
+<dt>Undo</dt>
+<dd>Correct Keys Pressed : <span id="undo">Not Yet</span></dd>
+
+<dt>Tab to Transient Enable/Disable</dt>
+<dd>Correct Keys Pressed : <span id="tabtrans">Not Yet</span></dd>
+
+<dt>Toggle Narrow/Wide Faders</dt>
+<dd>Correct Keys Pressed : <span id="narrow">Not Yet</span></dd>
+
+<dt>Preroll Enable/Disable</dt>
+<dd>Correct Keys Pressed : <span id="preroll">Not Yet</span></dd>
+
+<dt>Loop Playback Enable/Disable</dt>
+<dd>Correct Keys Pressed : <span id="loop">Not Yet</span></dd>
+
+<dt>Create Clip Group</dt>
+<dd>Correct Keys Pressed : <span id="Clipgrp">Not Yet</span></dd>
+
+<dt>Activate Clip Looping</dt>
+<dd>Correct Keys Pressed : <span id="regloop">Not Yet</span></dd>
+
+<dt>Fill Screen with Selection</dt>
+<dd>Correct Keys Pressed : <span id="fill">Not Yet</span></dd>
+
+</dl><dl>
+
+<dt>Select from Cursor to Start</dt>
+<dd>Correct Keys Pressed : <span id="cursToStart">Not Yet</span></dd>
+
+<dt>Select from Cursor to End</dt>
+<dd>Correct Keys Pressed : <span id="cursToEnd">Not Yet</span></dd>
+
+<dt>Select Unused Clips</dt>
+<dd>Correct Keys Pressed : <span id="selectun">Not Yet</span></dd>
+
+<dt>Create Sync Point</dt>
+<dd>Correct Keys Pressed : <span id="syncpoint">Not Yet</span></dd>
+
+<dt>Place Cursor "On the Fly"</dt>
+<dd>Correct Keys Pressed : <span id="cursor">Not Yet</span></dd>
+
+<dt>Quantize</dt>
+<dd>Correct Keys Pressed : <span id="quantize">Not Yet</span></dd>
+
+<dt>Identify Beat</dt>
+<dd>Correct Keys Pressed : <span id="identify">Not Yet</span></dd>
+
+<dt>Clear Unused Clips</dt>
+<dd>Correct Keys Pressed : <span id="clearun">Not Yet</span></dd>
+
+</dl>
+<br>
+<h4>To start over, refresh the page.</h4>
+</body>
+</html>
