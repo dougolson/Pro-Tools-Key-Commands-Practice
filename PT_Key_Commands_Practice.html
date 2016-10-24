@@ -1,8 +1,10 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//dtD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/dtD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
 <title>RT230 Key Commands</title>
 <link rel="stylesheet" href="style2.css" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="shortcut.js" type="text/javascript"></script>
 <script src="jsl.js" type="text/javascript"></script>
 <script src="common.js" type="text/javascript"></script>
@@ -13,6 +15,8 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 <script type="text/javascript">
 function markCalled(id) {
 	$(id).innerHTML = "Yes!";
+	$(id).style.fontWeight = 'bold';
+	$(id).style.color = '#db0000';
 	$(id).className = "message-success";
 }
 function init() {
@@ -100,96 +104,103 @@ window.onload=init;
 </script>
 </head>
 <body>
-<div id="header">
-<div id="content">
 
+<div id="header">
 <h2>Pro Tools Key Commands Practice</h2>
 
 <h3>Press the keys you think will execute the commands listed below</h3>
 
 <h4>All Commands work in Firefox. A few do not work in Safari and Chrome</h4> 
 
-<dl>
-
-<dt>Separate Clip</dt>
-<dd>Correct Keys Pressed : <span id="separate">Not Yet</span></dd>
-
-<dt>Repeat Clip</dt>
-<dd>Correct Keys Pressed : <span id="repeat">Not Yet</span></dd>
-
-<dt>Duplicate</dt>
-<dd>Correct Keys Pressed : <span id="duplicate">Not Yet</span></dd>
-
-<dt>Selector Tool</dt>
-<dd>Correct Keys Pressed : <span id="selector">Not Yet</span></dd>
-
-<dt>Slip Mode</dt>
-<dd>Correct Keys Pressed : <span id="slip">Not Yet</span></dd>
-
-<dt>Create Fade</dt>
-<dd>Correct Keys Pressed : <span id="fade">Not Yet</span></dd>
-
-<dt>Consolidate</dt>
-<dd>Correct Keys Pressed : <span id="consol">Not Yet</span></dd>
-
-<dt>Create Group</dt>
-<dd>Correct Keys Pressed : <span id="group">Not Yet</span></dd>
-
-</dl>
-<dl>
-
-<dt>Undo</dt>
-<dd>Correct Keys Pressed : <span id="undo">Not Yet</span></dd>
-
-<dt>Tab to Transient Enable/Disable</dt>
-<dd>Correct Keys Pressed : <span id="tabtrans">Not Yet</span></dd>
-
-<dt>Toggle Narrow/Wide Faders</dt>
-<dd>Correct Keys Pressed : <span id="narrow">Not Yet</span></dd>
-
-<dt>Preroll Enable/Disable</dt>
-<dd>Correct Keys Pressed : <span id="preroll">Not Yet</span></dd>
-
-<dt>Loop Playback Enable/Disable</dt>
-<dd>Correct Keys Pressed : <span id="loop">Not Yet</span></dd>
-
-<dt>Create Clip Group</dt>
-<dd>Correct Keys Pressed : <span id="Clipgrp">Not Yet</span></dd>
-
-<dt>Activate Clip Looping</dt>
-<dd>Correct Keys Pressed : <span id="regloop">Not Yet</span></dd>
-
-<dt>Fill Screen with Selection</dt>
-<dd>Correct Keys Pressed : <span id="fill">Not Yet</span></dd>
-
-</dl><dl>
-
-<dt>Select from Cursor to Start</dt>
-<dd>Correct Keys Pressed : <span id="cursToStart">Not Yet</span></dd>
-
-<dt>Select from Cursor to End</dt>
-<dd>Correct Keys Pressed : <span id="cursToEnd">Not Yet</span></dd>
-
-<dt>Select Unused Clips</dt>
-<dd>Correct Keys Pressed : <span id="selectun">Not Yet</span></dd>
-
-<dt>Create Sync Point</dt>
-<dd>Correct Keys Pressed : <span id="syncpoint">Not Yet</span></dd>
-
-<dt>Place Cursor "On the Fly"</dt>
-<dd>Correct Keys Pressed : <span id="cursor">Not Yet</span></dd>
-
-<dt>Quantize</dt>
-<dd>Correct Keys Pressed : <span id="quantize">Not Yet</span></dd>
-
-<dt>Identify Beat</dt>
-<dd>Correct Keys Pressed : <span id="identify">Not Yet</span></dd>
-
-<dt>Clear Unused Clips</dt>
-<dd>Correct Keys Pressed : <span id="clearun">Not Yet</span></dd>
-
-</dl>
-<br>
 <h4>To start over, refresh the page.</h4>
+</div>
+
+<div id="content">
+	
+<ul>
+
+<li>Separate Clip<br>
+Correct Keys Pressed: <span id="separate">Not Yet</span></li>
+
+<li>Repeat Clip<br>
+Correct Keys Pressed: <span id="repeat">Not Yet</span></li>
+
+<li>Duplicate<br>
+Correct Keys Pressed: <span id="duplicate">Not Yet</span></li>
+
+<li>Selector Tool<br>
+Correct Keys Pressed: <span id="selector">Not Yet</span></li>
+
+<li>Slip Mode<br>
+Correct Keys Pressed: <span id="slip">Not Yet</span></li>
+
+<li>Create Fade<br>
+Correct Keys Pressed: <span id="fade">Not Yet</span></li>
+
+<li>Consolidate<br>
+Correct Keys Pressed: <span id="consol">Not Yet</span></li>
+
+<li>Create Group<br>
+Correct Keys Pressed: <span id="group">Not Yet</span></li>
+
+</ul>
+
+
+
+<ul> 
+
+<li>Undo<br>
+Correct Keys Pressed: <span id="undo">Not Yet</span></li>
+
+<li>Tab to Transient Enable/Disable<br>
+Correct Keys Pressed: <span id="tabtrans">Not Yet</span></li>
+
+<li>Toggle Narrow/Wide Faders<br>
+Correct Keys Pressed: <span id="narrow">Not Yet</span></li>
+
+<li>Preroll Enable/Disable<br>
+Correct Keys Pressed: <span id="preroll">Not Yet</span></li>
+
+<li>Loop Playback Enable/Disable<br>
+Correct Keys Pressed: <span id="loop">Not Yet</span></li>
+
+<li>Create Clip Group<br>
+Correct Keys Pressed: <span id="Clipgrp">Not Yet</span></li>
+
+<li>Activate Clip Looping<br>
+Correct Keys Pressed: <span id="regloop">Not Yet</span></li>
+
+<li>Fill Screen with Selection<br>
+Correct Keys Pressed: <span id="fill">Not Yet</span></li>
+
+</ul><ul>
+
+<li>Select from Cursor to Start<br>
+Correct Keys Pressed: <span id="cursToStart">Not Yet</span></li>
+
+<li>Select from Cursor to End<br>
+Correct Keys Pressed: <span id="cursToEnd">Not Yet</span></li>
+
+<li>Select Unused Clips<br>
+Correct Keys Pressed: <span id="selectun">Not Yet</span></li>
+
+<li>Create Sync Point<br>
+Correct Keys Pressed: <span id="syncpoint">Not Yet</span></li>
+
+<li>Place Cursor "On the Fly"<br>
+Correct Keys Pressed: <span id="cursor">Not Yet</span></li>
+
+<li>Quantize<br>
+Correct Keys Pressed: <span id="quantize">Not Yet</span></li>
+
+<li>Identify Beat<br>
+Correct Keys Pressed: <span id="identify">Not Yet</span></li>
+
+<li>Clear Unused Clips<br>
+Correct Keys Pressed: <span id="clearun">Not Yet</span></li>
+
+</ul>
+<br>
+</div>
 </body>
 </html>
